@@ -32,7 +32,7 @@ These dynamics are crucial for understanding the potential impact of public heal
 
 ## SIR Model Dynamics
 
-### Nullclines and Fixed Points
+## Nullclines and Fixed Points
 
 In this segment of the paper, we delve deeper into the dynamics of our SIR model for the dataset. We analyze the nullclines, fixed points, and perform a stability analysis to comprehend the potential long-term behavior of the epidemic within the population.
 
@@ -44,8 +44,7 @@ The fixed points, where these nullclines intersect, give us critical insights:
 
 The nullclines, which represent the points where the rate of change of susceptible (s) and infected (i) individuals is zero, are depicted in the following figure. These curves are critical for understanding the system's behavior at equilibrium.
 
-- For ds/dt = 0, the nullcline is i = (μ (1 - s)) / (β s).
-- For di/dt = 0, the nullcline is a vertical line at s = δ / β.
+[Embed images of the equations here]
 
 The fixed points (s*, i*) are where these nullclines intersect, indicating the system's potential long-term behavior:
 - Disease-free equilibrium: (s*, i*) = (1, 0), where the population is fully susceptible and there are no infections.
