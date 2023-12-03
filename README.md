@@ -79,3 +79,18 @@ The stability at the fixed points is analyzed by computing the eigenvalues of th
   The eigenvalues at the endemic equilibrium are approximately: `[-0.01109474+0.02258672i, -0.01109474-0.02258672i]`.
 
 The presence of a positive eigenvalue at the disease-free equilibrium indicates instability, suggesting that if an infection is introduced into the population, it will grow. The complex eigenvalues with negative real parts at the endemic equilibrium suggest a stable spiral point.
+
+## Phase Portrait
+
+Moving forward in our exploration of the SIR model, we now focus on the phase portrait which encapsulates the flow of the epidemic through the susceptible and infected populations.
+
+![Phase portrait of the SIR model.](output/PHASE_PORTRAIT.png)
+
+As illustrated in the phase portrait, the dynamic interplay between susceptible and infected populations is captured.
+
+Key Points of the Phase Portrait:
+- Unstable Disease-Free Equilibrium: The green dot at the bottom right corner, where 100% of the population is susceptible and none are infected, is an equilibrium point. However, the flow lines diverge from this point, indicating instability. This suggests that any introduction of the disease into the population is likely to grow rather than die out, necessitating active measures to control the spread.
+- Stable Endemic Equilibrium: The magenta dot represents a point where the disease persists in the population at a stable level. The inward spiraling of flow lines towards this point highlights its stability. This means that once the disease spreads in the population, it's likely to settle at a constant level without overwhelming the healthcare system.
+- Inevitable Endemic State: The trajectories in the phase portrait all lead towards the endemic equilibrium. This indicates that, given the current parameters, the disease is expected to become a constant feature of the population's health landscape.
+
+The phase portrait thus offers a valuable visual aid in understanding the potential outcomes of the epidemic's spread. By mapping the possible trajectories of the disease, we can better anticipate and prepare for its impact on the population.
