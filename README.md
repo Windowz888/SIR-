@@ -94,3 +94,12 @@ Key Points of the Phase Portrait:
 - Inevitable Endemic State: The trajectories in the phase portrait all lead towards the endemic equilibrium. This indicates that, given the current parameters, the disease is expected to become a constant feature of the population's health landscape.
 
 The phase portrait thus offers a valuable visual aid in understanding the potential outcomes of the epidemic's spread. By mapping the possible trajectories of the disease, we can better anticipate and prepare for its impact on the population.
+
+## Conclusion and Policy Recommendations
+
+1. **Enhance Quarantine Measures:** The phase portrait has shown us that natural progression leads to an endemic state. By implementing and strengthening quarantine measures, we can reduce the effective transmission rate $(\beta)$, effectively 'bending' the flow away from the endemic equilibrium. This could involve stricter border controls, isolation protocols for infected individuals, and contact tracing to prevent the spread.
+
+2. **Promote Vaccination:** Vaccination is a powerful tool in reducing the transmission rate. By increasing the proportion of the immune population, we effectively lower $(\beta)$, which is pivotal in controlling the epidemic. Vaccination not only protects individuals but also contributes to the broader concept of herd immunity, reducing the overall possibility of transmission within the community.
+
+It is imperative that these strategies are adopted and adapted to the evolving landscape of the pandemic to ensure the health and safety of the population.
+
