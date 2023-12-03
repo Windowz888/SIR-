@@ -53,3 +53,45 @@ The fixed points (s*, i*) are where these nullclines intersect, indicating the s
 For the given parameters, the endemic equilibrium is approximately (0.6009, 0.0744), as shown by the magenta dot in the phase portrait.
 
 ![SIR Model Nullclines and Fixed Points. The dashed red and blue lines represent the nullclines for the susceptible and infected populations, respectively. The green and purple dots indicate the disease-free and endemic equilibria.](output/FIX_NULL.png)
+
+### Stability Analysis
+
+Our stability analysis revolves around the eigenvalues of the Jacobian matrix at each equilibrium point. The eigenvalues tell us about the nature of these points:
+- At the Disease-Free Equilibrium, we have mixed eigenvalues: one negative, indicating attraction, and one positive, suggesting that any introduction of the infection could lead to an epidemic since this point is unstable.
+- Conversely, the Endemic Equilibrium has complex eigenvalues with negative real parts, confirming stability. This implies a tendency towards a steady state where the disease coexists with the population without leading to an outbreak or eradication.
+
+Our model predicts that in the context of the parameters derived from the Canadian COVID-19 data, complete eradication of the disease is unlikely without intervention. Instead, the population tends toward an equilibrium where the disease persists at manageable levels.
+
+#### Eigenvalues Analysis
+
+The stability at the fixed points is analyzed by computing the eigenvalues of the Jacobian matrix at each equilibrium:
+
+- For the disease-free equilibrium, the Jacobian matrix is:
+
+  $$ J = \begin{bmatrix} -\mu & -\beta \\ 0 & \beta - \delta \end{bmatrix} $$
+
+  The eigenvalues at the disease-free equilibrium are: `[-0.01333333, 0.04749398]`.
+
+- For the endemic equilibrium, the Jacobian matrix is:
+
+  $$ J = \begin{bmatrix} -\beta i^* - \mu & -\beta s^* \\ \beta i^* & \beta s^* - \delta \end{bmatrix} $$
+
+  The eigenvalues at the endemic equilibrium are approximately: `[-0.01109474+0.02258672i, -0.01109474-0.02258672i]`.
+
+The presence of a positive eigenvalue at the disease-free equilibrium indicates instability, suggesting that if an infection is introduced into the population, it will grow. The complex eigenvalues with negative real parts at the endemic equilibrium suggest a stable spiral point.
+
+## Phase Portrait
+
+Moving forward in our exploration of the SIR model, we now focus on the phase portrait which encapsulates the flow of the epidemic through the susceptible and infected populations.
+
+![Phase portrait of the SIR model.](output/PHASE_PORTRAIT.png)
+
+As illustrated in the phase portrait, the dynamic interplay between susceptible and infected populations is captured.
+
+Key Points of the Phase Portrait:
+- Unstable Disease-Free Equilibrium: The green dot at the bottom right corner, where 100% of the population is susceptible and none are infected, is an equilibrium point. However, the flow lines diverge from this point, indicating instability. This suggests that any introduction of the disease into the population is likely to grow rather than die out, necessitating active measures to control the spread.
+- Stable Endemic Equilibrium: The magenta dot represents a point where the disease persists in the population at a stable level. The inward spiraling of flow lines towards this point highlights its stability. This means that once the disease spreads in the population, it's likely to settle at a constant level without overwhelming the healthcare system.
+- Inevitable Endemic State: The trajectories in the phase portrait all lead towards the endemic equilibrium. This indicates that, given the current parameters, the disease is expected to become a constant feature of the population's health landscape.
+
+The phase portrait thus offers a valuable visual aid in understanding the potential outcomes of the epidemic's spread. By mapping the possible trajectories of the disease, we can better anticipate and prepare for its impact on the population.
+
