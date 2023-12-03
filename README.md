@@ -30,3 +30,29 @@ These dynamics are crucial for understanding the potential impact of public heal
 
 ![SIR Model Simulation showing the proportion of Susceptible (blue), Infected (red), and Recovered (green) individuals over time.](output/SIM.png)
 
+## SIR Model Dynamics
+
+### Nullclines and Fixed Points
+
+In this segment of the paper, we delve deeper into the dynamics of our SIR model for the dataset. We analyze the nullclines, fixed points, and perform a stability analysis to comprehend the potential long-term behavior of the epidemic within the population.
+
+We begin by plotting the nullclines for our system. These are the curves along which the rate of change of our susceptible and infected populations is zero, essentially where the system is in a state of equilibrium. The red dashed line represents the nullcline where the rate of change of the susceptible population is zero, and the blue dashed line represents the nullcline for the infected population.
+
+The fixed points, where these nullclines intersect, give us critical insights:
+- The Disease-Free Equilibrium occurs at full susceptibility with no infections, depicted by the green marker. Here, \(s^* = 1\), meaning the entire population is susceptible, and \(i^* = 0\), indicating no current infections.
+- The Endemic Equilibrium, shown by the magenta marker, is where the disease persists in the population at stable levels. The values \(s^* = 0.601\) and \(i^* = 0.0744\) suggest that 60.1% of the population remains susceptible while 7.44% is infected in the long term.
+
+The nullclines, which represent the points where the rate of change of susceptible (\(s\)) and infected (\(i\)) individuals is zero, are depicted in the following figure. These curves are critical for understanding the system's behavior at equilibrium.
+
+- For \(\frac{ds}{dt} = 0\), the nullcline is
+  \[i = \frac{\mu (1 - s)}{\beta s}\].
+- For \(\frac{di}{dt} = 0\), the nullcline is a vertical line at
+  \[s = \frac{\delta}{\beta}\].
+
+The fixed points (\(s^*\), \(i^*\)) are where these nullclines intersect, indicating the system's potential long-term behavior:
+- Disease-free equilibrium: \((s^*, i^*) = (1, 0)\), where the population is fully susceptible and there are no infections.
+- Endemic equilibrium: \((s^*, i^*) = \left(\frac{\delta}{\beta}, \frac{\mu (1 - \frac{\delta}{\beta})}{\delta}\right)\), where the disease persists at stable levels within the population.
+
+For the given parameters, the endemic equilibrium is approximately \((0.6009, 0.0744)\), as shown by the magenta dot in the phase portrait.
+
+![SIR Model Nullclines and Fixed Points. The dashed red and blue lines represent the nullclines for the susceptible and infected populations, respectively. The green and purple dots indicate the disease-free and endemic equilibria.](output/FIX_NULL.png)
