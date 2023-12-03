@@ -28,4 +28,5 @@ The model includes the effects of natural birth and death rates (`μ`) as well a
 
 These dynamics are crucial for understanding the potential impact of public health interventions and can be used to inform policy decisions. The model suggests that without any interventions, the epidemic will eventually reach a steady state, where the number of new infections is balanced by the number of recoveries and deaths.
 
-![SIR Model Simulation showing the proportion of Susceptible (blue), Infected (red), and Recovered (green) individuals over time.](path_to_your_image/SIM.png)
+![SIR Model Simulation showing the proportion of Susceptible (blue), Infected (red), and Recovered (green) individuals over time.](output/SIM.png)
+
